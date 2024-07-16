@@ -1,7 +1,6 @@
+# Stage 1: Test
 FROM node:14-alpine as test
 WORKDIR /app
-COPY package.json package-lock.json* ./
-RUN npm ci
 COPY . .
 RUN npm test
 
