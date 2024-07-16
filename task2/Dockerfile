@@ -1,7 +1,7 @@
 # Stage 1: Test
 FROM node:14-alpine as test
 WORKDIR /app
-COPY . .
+COPY ./task2/ .
 RUN npm test
 
 # Stage 2: Production
